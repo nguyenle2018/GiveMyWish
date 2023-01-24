@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 23, 2023 at 07:57 PM
+-- Generation Time: Jan 24, 2023 at 03:06 PM
 -- Server version: 5.7.33
 -- PHP Version: 7.4.19
 
@@ -46,7 +46,8 @@ CREATE TABLE `employees` (
 INSERT INTO `employees` (`EMP_ID`, `Nom`, `Prénom`, `Naissance`, `EtatCivil`, `Email`, `Phone`, `Image`) VALUES
 (1, 'Martin', 'Lucie', '1990-07-07', 'mariage', 'lucie.martin@yahoo.com', '0782456789', 'https://www.linkedin.com/in/lucie-martin-3b087a168/'),
 (2, 'Bertrand', 'Olivier', '1993-10-21', 'single', 'olivier.berthand@gmail.com', '0624357865', NULL),
-(4, 'Dubois', 'Phillippes', '1975-10-07', 'mariage', 'phillippes.dubois@gmail.com', '0620986527', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Professeur_Philippe_Dubois.jpg/1024px-Professeur_Philippe_Dubois.jpg');
+(4, 'Dubois', 'Phillippes', '1975-10-07', 'mariage', 'phillippes.dubois@gmail.com', '0620986527', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Professeur_Philippe_Dubois.jpg/1024px-Professeur_Philippe_Dubois.jpg'),
+(5, 'Robert', 'Susan', '1993-01-20', 'single', 'susan.robert@gmail.com', '0728355865', NULL);
 
 -- --------------------------------------------------------
 
@@ -187,7 +188,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `EMP_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `EMP_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
